@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ElevatePro - Modern SaaS platform empowering developers and teams to build and scale modern web applications seamlessly." />
+  <title>ElevatePro | Build, Scale & Ship Faster</title>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome Icons for UI & Social Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="logo" aria-label="ElevatePro Homepage">
+        <span class="logo-icon"><i class="fa-solid fa-layer-group"></i></span>
+        <span class="logo-text">Elevate<span>Pro</span></span>
+      </a>
+
+      <!-- Mobile Navigation Toggle -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <i class="fa-solid fa-bars hamburger"></i>
+        <i class="fa-solid fa-xmark close-icon"></i>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+          <li class="nav-item"><a href="#solutions" class="nav-link">Solutions</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#signin" class="btn btn-ghost">Sign In</a>
+          <a href="#cta" class="btn btn-primary">Get Started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>Next-Gen Cloud Architecture &bull; v2.0 is Live</span>
+          </div>
+          <h1 class="hero-title">
+            Build smarter web products <span class="gradient-text">faster than ever.</span>
+          </h1>
+          <p class="hero-subtitle">
+            ElevatePro gives engineering teams an all-in-one developer workspace with instant preview environments, resilient micro-frontends, and automated deployments.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#cta" class="btn btn-primary btn-lg">
+              <span>Start Free 14-Day Trial</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#demo" class="btn btn-outline btn-lg">
+              <i class="fa-solid fa-circle-play"></i>
+              <span>Watch 2-Min Demo</span>
+            </a>
+          </div>
+          <div class="hero-trust">
+            <div class="avatars-group">
+              <span class="avatar" style="background-color: #f97316;">JD</span>
+              <span class="avatar" style="background-color: #ea580c;">AL</span>
+              <span class="avatar" style="background-color: #fb923c;">RK</span>
+              <span class="avatar" style="background-color: #c2410c;">+4k</span>
+            </div>
+            <div class="trust-text">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>Loved by over <strong>10,000+</strong> developers worldwide</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="dashboard-mockup">
+            <div class="mockup-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="mockup-title">elevatepro-cloud-dashboard.app</span>
+            </div>
+            <div class="mockup-body">
+              <div class="stats-row">
+                <div class="mini-stat">
+                  <span class="stat-label">Build Speed</span>
+                  <span class="stat-value text-success">1.2s <i class="fa-solid fa-arrow-trend-up"></i></span>
+                </div>
+                <div class="mini-stat">
+                  <span class="stat-label">Uptime</span>
+                  <span class="stat-value text-primary">99.99%</span>
+                </div>
+                <div class="mini-stat">
+                  <span class="stat-label">Deployments</span>
+                  <span class="stat-value">42.8k</span>
+                </div>
+              </div>
+              <div class="chart-box">
+                <div class="chart-header">
+                  <span>Pipeline Traffic & Edge Performance</span>
+                  <span class="badge-small">Active</span>
+                </div>
+                <div class="chart-bars">
+                  <div class="bar" style="--height: 45%;"></div>
+                  <div class="bar" style="--height: 70%;"></div>
+                  <div class="bar" style="--height: 55%;"></div>
+                  <div class="bar" style="--height: 85%;"></div>
+                  <div class="bar active" style="--height: 95%;"></div>
+                  <div class="bar" style="--height: 60%;"></div>
+                  <div class="bar" style="--height: 78%;"></div>
+                </div>
+              </div>
+              <div class="code-preview">
+                <code><span class="token-kw">git</span> push origin main <span class="token-comment"># &rarr; Deployed to edge in 480ms</span></code>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section using CSS Grid -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Powerful Capabilities</span>
+          <h2 class="section-title">Everything you need to ship world-class software</h2>
+          <p class="section-subtitle">Designed from first principles to remove boilerplate, accelerate workflows, and maintain 100% responsiveness on any device.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon icon-blue">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h3 class="feature-title">Lightning Deployments</h3>
+            <p class="feature-desc">Push your git branch and see your changes deployed across globally distributed edge nodes in under a second.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon icon-purple">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h3 class="feature-title">Responsive Design First</h3>
+            <p class="feature-desc">Engineered with flexible grids and adaptive media queries ensuring pixel-perfect layouts on mobiles, tablets, and 4K displays.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon icon-emerald">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3 class="feature-title">Zero-Trust Security</h3>
+            <p class="feature-desc">Enterprise-grade encryption, automated SSL certificates, and DDOS mitigation are built-in by default without extra setup.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon icon-amber">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3 class="feature-title">Real-Time Telemetry</h3>
+            <p class="feature-desc">Gain instant visibility into web vitals, latency metrics, error tracking, and user engagement flows right out of the box.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon icon-rose">
+              <i class="fa-solid fa-cubes"></i>
+            </div>
+            <h3 class="feature-title">Modular Component Architecture</h3>
+            <p class="feature-desc">Built using modern CSS Flexbox and CSS Grid frameworks that scale gracefully without bloated third-party dependencies.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon icon-indigo">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3 class="feature-title">24/7 Dedicated Support</h3>
+            <p class="feature-desc">Reach our team of core developers and systems architects any time through live chat, email, or community Slack channels.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action (CTA) Section -->
+    <section class="cta-section" id="cta">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-content">
+            <h2 class="cta-title">Ready to elevate your web experience?</h2>
+            <p class="cta-subtitle">Join thousands of software engineers building faster, cleaner, and fully responsive web applications today.</p>
+            <div class="cta-form-wrapper">
+              <form class="cta-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing! We will reach out shortly.');">
+                <input type="email" class="cta-input" placeholder="Enter your work email..." required />
+                <button type="submit" class="btn btn-primary">Get Early Access</button>
+              </form>
+              <p class="form-disclaimer"><i class="fa-solid fa-circle-check"></i> Free 14-day trial &bull; No credit card required &bull; Cancel anytime</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-layer-group"></i></span>
+            <span class="logo-text">Elevate<span>Pro</span></span>
+          </a>
+          <p class="footer-desc">
+            A demonstration project built for the Web Development Internship at Elevate Labs. Showcasing semantic HTML5 structure, flexible layouts, and responsive CSS techniques.
+          </p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Discord">
+              <i class="fa-brands fa-discord"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-column">
+            <h4 class="column-title">Product</h4>
+            <ul class="footer-links">
+              <li><a href="#features">Features</a></li>
+              <li><a href="#solutions">Integrations</a></li>
+              <li><a href="#pricing">Pricing Plans</a></li>
+              <li><a href="#changelog">Changelog</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="column-title">Resources</h4>
+            <ul class="footer-links">
+              <li><a href="#docs">Documentation</a></li>
+              <li><a href="#tutorials">HTML & CSS Guides</a></li>
+              <li><a href="#community">Community Forum</a></li>
+              <li><a href="#support">API Reference</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="column-title">Company</h4>
+            <ul class="footer-links">
+              <li><a href="#about">About Elevate Labs</a></li>
+              <li><a href="#careers">Careers</a></li>
+              <li><a href="#privacy">Privacy Policy</a></li>
+              <li><a href="#terms">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 ElevatePro. Web Development Internship &bull; Task 1. All rights reserved.</p>
+        <p class="built-with">
+          Built with <i class="fa-solid fa-heart heart-icon"></i> using Semantic HTML5 &amp; CSS3
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Simple script for mobile navigation toggle -->
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    navToggle.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('is-open');
+      navToggle.classList.toggle('is-active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Close mobile nav when clicking any link
+    document.querySelectorAll('.nav-link, .nav-actions .btn').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('is-open');
+        navToggle.classList.remove('is-active');
+        navToggle.setAttribute('aria-expanded', false);
+      });
+    });
+  </script>
+</body>
+</html>
