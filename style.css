@@ -4,10 +4,6 @@
    Theme: Clean White & Subtle Orange Modern UI/UX
    Concepts: HTML5, CSS3, Flexbox, Grid, Media Queries, Box Model
    ========================================================================== */
-
-/* --------------------------------------------------------------------------
-   1. CSS Custom Properties (Theme & Design Tokens)
-   -------------------------------------------------------------------------- */
 :root {
   /* Color Palette - White & Subtle Orange */
   --color-primary: #f97316;              /* Primary Subtle Orange */
